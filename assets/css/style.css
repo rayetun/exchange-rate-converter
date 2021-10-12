@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,600,700,800,900|Poppins:400,600,700,900');
+
+* {
+	box-sizing: border-box;
+}
+body,
+html {
+	font-family: 'Lato', sans-serif;
+	color: #ffffff;
+	margin: 0px;
+	font-size: 18px;
+	line-height: 1.6;
+	background: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 15px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+}
+i{
+	font-size:50px;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+.exchange-area{
+	background-color: #130C60;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+}
+.exchange-area h2{
+	color: #FFBD5B;
+	margin: 20px 0 0 0;
+}
+.exchange-area p{
+	margin: 0 0 25px 0;
+}
+.money-img {
+    width: 100px;
+}
+.btn {
+	color: #fff;
+	background: #4632FF;
+	cursor: pointer;
+	border-radius: 3px;
+	font-size: 12px;
+	padding: 8px 17px;
+	border: 1px solid #4632FF;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 1px;
+	transition: 0.3s ease-in;
+}
+.btn:hover{
+	background: transparent;
+}
+.currency {
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+} 
+.currency select {
+	cursor: pointer;
+	padding: 10px 20px 10px 10px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	border: 2px solid #4632FF;
+	font-size: 16px;
+	background: transparent;
+	color: #4632FF;
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%20000002%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+	background-position: right 5px top 50%, 0, 0;
+	background-size: 12px auto, 100%;
+	background-repeat: no-repeat;
+}
+.currency input {
+	background: #4632FF;
+	padding: 4px 10px;
+	margin-left: 50px;
+	border: 0;
+	font-size: 30px;
+	text-align: center;
+	border-radius: 3px;
+	color:#ffffff;
+}
+.swap-rate-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.rate {
+	color: #FFBD5B;
+	font-size: 14px;
+	padding: 0 10px;
+}
+
+select:focus,
+input:focus,
+button:focus {
+	outline: 0;
+}
+
+@media (max-width: 600px) {
+.currency input {
+	width: 200px;
+}
+}
